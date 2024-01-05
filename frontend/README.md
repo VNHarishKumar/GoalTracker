@@ -26,4 +26,5 @@ Cmd for starting frontend:docker run --network test-assignment --name doc-fronte
 - If changing mongodb container name change in backend for running correctly
 - Change the image name in docker run if your changing the name while building the image
 - If your changing the network name change in other docker command to
+- The react docker file use node a base image so no need to do any change for it
   
