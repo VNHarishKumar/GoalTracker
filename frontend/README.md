@@ -8,6 +8,7 @@ Cmd :  docker run --network test-assignment --name con-mongo -p 27017:27017 -v d
 Volume backend : mongo
 
 go inside backend folder and execute this command
+
 cmd for building image in backend: docker build -t backend .
 
 backend container name: doc-backend
@@ -15,6 +16,7 @@ backend container name: doc-backend
 Cmd for starting backend:  docker run --network test-assignment  --rm -p 80:80 -d -v mongo:/app/logs -v "/Users/harish/Documents/MIS_NEU/Docker_materials/multi-01-starting-setup/backend:/app" -v /app/node_modules --name doc-backend  backend   
 
 go inside frontend folder and execute this command
+
 cmd for building image in frontend: docker build -t frontend .
 
 backend container name: doc-frontend
