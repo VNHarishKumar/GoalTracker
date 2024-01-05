@@ -21,7 +21,7 @@ cmd for building image in frontend: docker build -t frontend .
 
 backend container name: doc-frontend
 
-Cmd for starting frontend:docker run --network test-assignment --name doc-frontend --rm -v "/Users/harish/Documents/MIS_NEU/Docker_materials/multi-01-starting-setup/frontend/src:/app/src“ -p 3000:3000 -d frontend
+Cmd for starting frontend:docker run --network test-assignment --name doc-frontend --rm -v "/Users/harish/Documents/MIS_NEU/Docker_materials/multi-01-starting-setup/frontend/src:/app/src" -p 3000:3000 -d frontend
 
 # Point to remeber
 
