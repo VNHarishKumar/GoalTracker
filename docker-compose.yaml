@@ -1,0 +1,34 @@
+version: "3.8"
+services:
+  con-mongo:
+    image: 'mongo'
+    container_name: con-mongo
+    volumes: 
+      - data:/data/db
+  backend:
+    build: ./backend/
+    container_name: doc-backend
+    ports:
+      - '80:80'
+    volumes: 
+      - mongo:/app/logs
+      - ./backend:/app
+      - /app/node_modules
+    depends_on:
+      - con-mongo
+  frontend:
+    build: ./frontend/
+    container_name: doc-frontend
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./frontend/src:/app/src
+    stdin_open: true
+    tty: true
+    depends_on:
+      - con-mongo
+      - backend
+
+volumes:
+  data:
+  mongo:
