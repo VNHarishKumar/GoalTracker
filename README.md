@@ -25,4 +25,16 @@ This is an sample project for cross contanirasation usage based on developer per
 - Bind mounts
 
 
-Gave the docker command of execurtion in Readme file available inside frontend folder
+Gave the docker command of execution in Readme file available inside frontend folder
+
+(or)
+
+You can use docker compose , you can see the step in docker-compose.yaml
+
+cmd to start: docker-compose up -d
+
+cmd to stop: docker-compose down
+
+Don't forget to delete Images and volumes after execution
+
+
